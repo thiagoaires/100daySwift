@@ -43,3 +43,25 @@ if numbers.count > 3{
 }
 
 print(numbers)
+
+
+let country = "Canada"
+
+if country == "Australia"{
+    print("G'day")
+}
+
+let name = "Taylor Swift"
+
+if name != "Anonymous" {
+    print("Welcome \(name)")
+}
+
+var username = "taylorswift13"
+
+if username.isEmpty{
+    username = "Anonymous"
+}
+
+
+print("Welcome \(username)")
