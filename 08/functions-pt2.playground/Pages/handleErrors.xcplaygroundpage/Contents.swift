@@ -19,3 +19,13 @@ func checkPassword(_ password: String) throws -> String{
 
 //checkPassword("12345")
 let valor = "12345"
+do{
+    let result = try checkPassword(valor)
+    print("\(result)")
+} catch PasswordError.short{
+    print("password too short")
+} catch PasswordError.obvious{
+    print("Password is too obvious, try another")
+} catch {
+    print("there was an error")
+}
