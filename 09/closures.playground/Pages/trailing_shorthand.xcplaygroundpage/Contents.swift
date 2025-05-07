@@ -1,6 +1,6 @@
 import Cocoa
 
-let team = ["June", "Gloria", "tifa", "zelda", "sofia" ]
+let team = ["June", "Gloria", "Tifa", "Zelda", "Sofia", "Tasha" ]
 
 let captainFirstTeam = team.sorted {
     if $0 == "tifa"{
@@ -13,5 +13,10 @@ let captainFirstTeam = team.sorted {
     
 }
 
+let reverseTeam = team.sorted {$0 > $1}
 print(captainFirstTeam)
+print(reverseTeam)
 
+let tTeam = team.filter { $0.hasPrefix("T")}
+
+print(tTeam)
